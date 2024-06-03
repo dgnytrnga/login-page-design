@@ -1,0 +1,99 @@
+body{
+  background: black;
+  display: flex;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background: black;
+  outline: none;
+  border-color: #fffff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 40px;
+}
+i{
+  position:absolute;
+  width: 550px;
+  height: 550px;
+  border: solid 5px;
+  outline: none;
+  border-color: red;
+  box-shadow: 0 0 25px red;
+}
+i:hover{
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 25px blue;
+}
+.a{
+  border-radius: 50% 50% 40% 60%;
+  animation: rotation 4s infinite linear;
+
+}
+
+.b{
+  border-radius: 50% 40% 45% 55%;
+    animation: rotation 6s infinite linear;
+}
+.c{
+  border-radius: 55% 48% 60% 45%;
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+h1{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: gray;
+  margin-left: 5px;
+}
+textarea{
+  width: 85%;
+  height: 30px;
+  outline: none;
+  border-color: #fffff;
+  box-shadow: 0 0 5px #ffffff;
+  font-size: 25px;
+  margin-left: 5px;
+  resize: none;
+}
+textarea:hover{
+  outline: none;
+  border-color: #fffff;
+  box-shadow: 0 0 10px red;
+  transition: 0.5s;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+a{
+  font-family: "Roboto Mono";
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: grey;
+  transition: 0.5s;
+}
